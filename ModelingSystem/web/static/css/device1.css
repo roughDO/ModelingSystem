@@ -1,0 +1,261 @@
+	.content{
+		width: 1910px;
+		height: 902px;
+		position: relative;
+		background-image: url("../img/device1.png");
+	}
+	.content>div{
+		width: 70px;
+		height: 15px;
+		background-color: transparent;
+		position: absolute;
+	}
+	.content>div>div{
+		line-height: 15px;
+		text-align: center;
+	}
+	.data_safe{
+		color: lawngreen;
+	}
+	.data_warn{
+		color: yellow;
+	}
+	.data_danger{
+		color: red;
+	}
+	/* 隔一段的高度相距55px */
+	.id{
+		display: none;
+	}
+	.dateTime{
+		display: none;
+	}
+	.TISA0901A{
+		top: 515px;
+		left: 1010px;
+	}
+	.TISA0901B{
+		top: 570px;
+		left: 1010px;
+	}
+	.TISA0902A{
+		top: 232px;
+		left: 1182px;
+	}
+	.TISA0902B{
+		top: 175px;
+		left: 1182px;
+	}
+	.TISA0903A{
+		top: 175px;
+		left: 1020px;
+	}
+	.TISA0903B{
+		top: 230px;
+		left: 1020px;
+	}
+	.TISA0904A{
+		top: 175px;
+		left: 860px;
+	}
+	.TISA0904B{
+		top: 230px;
+		left: 860px;
+	}
+	.TISA1061{
+		top: 177px;
+		left: 648px;
+	}
+	.TISA1062{
+		top: 232px;
+		left: 648px;
+	}
+	.TISA1063{
+		top: 177px;
+		left: 478px;
+	}
+	.TISA1064{
+		top: 232px;
+		left: 478px;
+	}
+	.TISA1065{
+		top: 580px;
+		left: 480px;
+	}
+	.TISA1066{
+		top: 635px;
+		left: 480px;
+	}
+	.TISA1067{
+		top: 580px;
+		left: 655px;
+	}
+	.TISA1068{
+		top: 635px;
+		left: 655px;
+	}
+	.TISA1071{
+		top: 580px;
+		left: 140px;
+	}
+	.TISA1072{
+		top: 635px;
+		left: 140px;
+	}
+	.TISA1073{
+		top: 352px;
+		left: 208px;
+	}
+	.TISA1074{
+		top: 408px;
+		left: 208px;
+	}
+	.TISA1075{
+		top: 352px;
+		left: 40px;
+	}
+	.TISA1076{
+		top: 408px;
+		left: 40px;
+	}
+	.TISA1077{
+		top: 240px;
+		left: 310px;
+	}
+	.TISA1078{
+		top: 295px;
+		left: 310px;
+	}
+	.TISA1081{
+		top: 477px;
+		left: 1740px;
+	}
+	.TISA1082{
+		top: 532px;
+		left: 1740px;
+	}
+	.TISA1083{
+		top: 235px;
+		left: 1768px;
+	}
+	.TISA1084{
+		top: 290px;
+		left: 1768px;
+	}
+	.TISA1085{
+		top: 235px;
+		left: 1608px;
+	}
+	.TISA1086{
+		top: 290px;
+		left: 1608px;
+	}
+	.TISA1087{
+		top: 230px;
+		left: 1380px;
+	}
+	.TISA1088{
+		top: 175px;
+		left: 1380px;
+	}
+	.VISA0901A{
+		top: 693px;
+		left: 870px;
+	}
+	.VISA0901B{
+		top: 733px;
+		left: 870px;
+	}
+	.VISA0902A{
+		top: 673px;
+		left: 1275px;
+	}
+	.VISA0902B{
+		top: 713px;
+		left: 1275px;
+	}
+	/* 挨在一起的高度相差40px */
+	.VISA1061X{
+		top: 690px;
+		left: 605px;
+	}
+	.VISA1061Y{
+		top: 730px;
+		left: 605px;
+	}
+	.VISA1062X{
+		top: 690px;
+		left: 420px;
+	}
+	.VISA1062Y{
+		top: 730px;
+		left: 420px;
+	}
+	.VISA1071X{
+		top: 245px;
+		left: 120px;
+	}
+	.VISA1071Y{
+		top: 285px;
+		left: 120px;
+	}
+	.VISA1072X{
+		top: 125px;
+		left: 410px;
+	}
+	.VISA1072Y{
+		top: 80px;
+		left: 410px;
+	}
+	.VISA1081X{
+		top: 673px;
+		left: 1620px;
+	}
+	.VISA1081Y{
+		top: 713px;
+		left: 1620px;
+	}
+	.VISA1082X{
+		top: 673px;
+		left: 1460px;
+	}
+	.VISA1082Y{
+		top: 713px;
+		left: 1460px;
+	}
+	.ZISA0901A{
+		top: 695px;
+		left: 1080px;
+	}
+	.ZISA0901B{
+		top: 735px;
+		left: 1080px;
+	}
+	.ZISA0901C{
+		top: 775px;
+		left: 1080px;
+	}
+	.ZISA1071{
+		top: 195px;
+		left: 120px;
+	}
+	.ZISA1072{
+		top: 155px;
+		left: 120px;
+	}
+	.ZISA1081{
+		top: 760px;
+		left: 1660px;
+	}
+	.ZISA1082{
+		top: 800px;
+		left: 1660px;
+	}
+	.KE0901{
+		top: 753px;
+		left: 1275px;
+	}
+	.KE1071{
+		top: 313px;
+		left: 825px;
+	}
