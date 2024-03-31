@@ -166,7 +166,7 @@ public class CoreController {
             for(String column : columns){
                 if(column.contains("TISA")){
                     int idx = columns.indexOf(column);
-                    System.out.println(strings.get(idx) + column);
+//                    System.out.println(strings.get(idx) + column);
                     if(Double.parseDouble(strings.get(idx)) > 100.0){
                         if(Double.parseDouble(strings.get(idx)) > 110.0){
                             warningList.add("danger");
@@ -178,7 +178,7 @@ public class CoreController {
                     }
                 }else if(column.contains("VISA")){
                     int idx = columns.indexOf(column);
-                    System.out.println(strings.get(idx) + column);
+//                    System.out.println(strings.get(idx) + column);
                     if(Integer.parseInt(strings.get(idx)) > 45){
                         if(Integer.parseInt(strings.get(idx)) > 70){
                             warningList.add("danger");
@@ -190,7 +190,7 @@ public class CoreController {
                     }
                 }else if(column.contains("ZISA")){
                     int idx = columns.indexOf(column);
-                    System.out.println(strings.get(idx) + column);
+//                    System.out.println(strings.get(idx) + column);
                     if(Double.parseDouble(strings.get(idx)) > 0.4 || Double.parseDouble(strings.get(idx)) < -0.4){
                         if(Double.parseDouble(strings.get(idx)) > 0.8 || Double.parseDouble(strings.get(idx)) < -0.8){
                             warningList.add("danger");
@@ -202,7 +202,7 @@ public class CoreController {
                     }
                 }else if(column.contains("KE")){
                     int idx = columns.indexOf(column);
-                    System.out.println(strings.get(idx) + column);
+//                    System.out.println(strings.get(idx) + column);
                     if(Integer.parseInt(strings.get(idx)) < 10000 || Integer.parseInt(strings.get(idx)) > 15000){
                         warningList.add("danger");
                     }else {
@@ -268,7 +268,7 @@ public class CoreController {
         }
         // 获取device1列名
         List<String> device1Columns = device1Dao.getColumns("device1");
-        System.out.println(device1Columns);
+//        System.out.println(device1Columns);
         // 获取device1数据
         List<Device1> daoDevice1s = device1Dao.getListDevice1ByTime(start_time, end_time);
 
@@ -279,6 +279,13 @@ public class CoreController {
         }
         model.addAttribute("columns",device1Columns);
         model.addAttribute("dataList",dataList);
+        // 暂时找不到直接传入js文件的方法，暂时用这个
+        List<List<String>> dataStrings = new ArrayList<>();
+        for (Device1Data dv : dataList ){
+            dataStrings.add(dv.strings);
+        }
+        model.addAttribute("dataStrings",dataStrings);
+        System.out.println(dataList.get(0).strings);
         return "device1";
     }
 }

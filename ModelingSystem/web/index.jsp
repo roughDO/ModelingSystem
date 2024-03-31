@@ -9,8 +9,10 @@
 <html>
   <head>
     <title>$Title$</title>
+    <link rel="stylesheet" href="static/css/device1.css"/>
+    <script src="static/js/device1.js"></script>
   </head>
   <body>
-  $END$
+  2222
   </body>
 </html>

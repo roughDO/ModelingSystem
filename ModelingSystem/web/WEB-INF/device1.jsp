@@ -13,6 +13,20 @@
     <meta charset="utf-8">
     <title>device1</title>
     <link rel="stylesheet" href="static/css/device1.css"/>
+    <%--script标签有bug--%>
+    <script rel="script" src="static/js/device1.js"></script>
+    <script rel="script" src="static/js/echarts.min.js"></script>
+    <script rel="script" src="static/js/jquery.min.js"></script>
+    <script>
+        var contextPath = "${pageContext.request.contextPath}";
+        console.log(contextPath);
+    </script>
+
+    <%--<script>--%>
+        <%--var script = document.createElement('script');--%>
+        <%--script.src = 'static/js/device1.js';--%>
+        <%--document.body.appendChild(script);--%>
+    <%--</script>--%>
 </head>
 <body>
 <div class="header">
@@ -23,6 +37,10 @@
             <input type="submit" class="button" value="Submit &raquo;" />
         </div>
     </form>
+</div>
+<%--隐藏在页面中心的表格--%>
+<div class="container">
+    <div class="chart" id="chart"></div>
 </div>
     <%--仅显示一次页面在这里写div class=content--%>
 <div class="content">
@@ -38,7 +56,7 @@
                         <c:forEach varStatus="sss" var="warn" items="${data.warningList}">
                             <c:choose>
                                 <c:when test="${idx.count - 2 == sss.count}">
-                                    <div class="${columnName}">
+                                    <div class="${columnName}" data-now="${data.now}" data-list="${dataStrings}" data-idx="${idx.count}">
                                         <div class="data_${warn}">${column}</div>
                                     </div>
                                 </c:when>
